@@ -1,0 +1,41 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: lightgray;
+  border-bottom: 1px solid black;
+}
+
+ul li {
+  display: inline-block;
+  padding: 10px 20px;
+}
+.nav_link {
+  text-decoration: none;
+  color: black;
+}
+
+.active {
+  color: #4782c1;
+  text-decoration-color: black;
+  font-weight: bold;
+}
+
+a.nav_link:hover {
+  cursor: pointer;
+  color: #836969;
+  text-decoration: none;
+}
+.logo {
+  height: 50px;
+}
+.nav {
+  align-items: center;
+  background-color: white;
+  justify-content: center;
+}
+@media only screen and (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+  }
+}

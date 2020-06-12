@@ -1,0 +1,6 @@
+.carousel-indicators,
+.carousel-control-next,
+.carousel-control-prev {
+  display: none;
+  opacity: 0;
+}

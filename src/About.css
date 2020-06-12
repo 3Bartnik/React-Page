@@ -1,0 +1,8 @@
+.container-img {
+  display: flex;
+  margin-top: 70px;
+}
+.info {
+  margin: 50px 40px;
+  text-align: center;
+}
