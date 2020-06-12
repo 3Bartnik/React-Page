@@ -1,13 +1,25 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Lato", sans-serif;
+  height: 100vh;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: "Lato", sans-serif;
 }
+.footer {
+  background-color: lightblue;
+}
+/* .Logo {
+  background-image: url(aparat.jpg) alt="Photo by Dariusz Sankowski on Unsplash";
+} */
+/* .container {
+  background-image: url(aparat1920x1440.jpg) alt=
+    "Photo by Dariusz Sankowski on Unsplash";
+  background-size: auto;
+} */
+
+/*  z body
+ //background-image: url(wall680x480.jpg);
+  //background-size: contain;
+  //background-repeat: no-repeat; */
