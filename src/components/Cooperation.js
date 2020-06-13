@@ -34,7 +34,7 @@ const styleCooperation = {
 //flex-wrap
 const fontColor = {
   color: "#4782c1",
-  margin: "30px 30px",
+  margin: "100px 0",
 };
 
 const Cooperation = (props) => {

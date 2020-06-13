@@ -15,10 +15,10 @@ const Price = () => {
       <h1 style={{ margin: "40px 0" }}>Cennik usług</h1>
       <div className="container d-flex">
         <div className="row d-flex flex-wrap">
-          <div className="col-sm-6 col-lg-12 d-flex ">
+          <div className="col-sm-12 col-lg-12 d-flex ">
             <h5 style={{ color: "#4782c1" }}>Pakiet brązowy </h5>
           </div>
-          <div className="col-sm-6 col-lg-12 ">
+          <div className="col-sm-12 col-lg-12 ">
             <span className="d-block">3 godzinna sesja </span>
             <span className="d-block">Make-up w cenie usługi</span>
             <span className="d-block"> 2 lokalizacje do wyboru</span>
@@ -28,10 +28,10 @@ const Price = () => {
         </div>
         <hr></hr>
         <div className="row d-flex flex-wrap ">
-          <div className="col-sm-6 col-lg-12 d-flex ">
+          <div className="col-sm-12 col-lg-12 d-flex ">
             <h5 style={{ color: "#4782c1" }}>Pakiet srebrny</h5>
           </div>
-          <div className="col-sm-6 col-lg-12 ">
+          <div className="col-sm-12 col-lg-12 ">
             <span className="d-block">6 godzinna sesja </span>
             <span className="d-block">Make-up w cenie usługi</span>
             <span className="d-block"> 3 lokalizacje do wyboru</span>
@@ -41,10 +41,10 @@ const Price = () => {
         </div>
         <hr></hr>
         <div className="row d-flex flex-wrap ">
-          <div className="col-sm-6 col-lg-12 d-flex ">
+          <div className="col-sm-12 col-lg-12 d-flex ">
             <h5 style={{ color: "#4782c1" }}>Pakiet złoty</h5>
           </div>
-          <div className="col-sm-6 col-lg-12">
+          <div className="col-sm-12 col-lg-12">
             <span className="d-block">9 godzinna sesja </span>
             <span className="d-block">Make-up w cenie usługi</span>
             <span className="d-block"> 5 lokalizacji do wyboru</span>

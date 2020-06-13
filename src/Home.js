@@ -10,6 +10,10 @@ import {
   product5,
   product6,
 } from "./assets";
+import Medal from "./assets/WorkNumbers/medal.png";
+import CourseWork from "./assets/WorkNumbers/school.png";
+import PhotoNumber from "./assets/WorkNumbers/portrait.png";
+import Experience from "./assets/WorkNumbers/experience.png";
 
 import Image from "react-bootstrap/Image";
 import Cooperation from "./components/Cooperation";
@@ -23,48 +27,48 @@ const categories = [
     id: "01",
     image: {
       src: product1,
-      description: "Sesje produktowe",
     },
+    description: "Produkty",
   },
   {
     id: "02",
     image: {
       src: product2,
-      description: "Koncerty",
     },
+    description: "Koncerty",
   },
   {
     id: "03",
     image: {
       src: product3,
-      description: "Uroczystości ślubne",
     },
+    description: "Uroczystości",
   },
   {
     id: "04",
     image: {
       src: product4,
-      description: "Portrety",
     },
+    description: "Portrety",
   },
   {
     id: "05",
     image: {
       src: product5,
-      description: "Konferencje",
     },
+    description: "Konferencje",
   },
   {
     id: "06",
     image: {
       src: product6,
-      description: "Sesje modowe",
     },
+    description: "Sesje modowe",
   },
 ];
 
 const styleInfo = {
-  margin: "100px 100px",
+  margin: "70px 100px",
   color: "#4782c1",
 };
 /* const styleInfo2 = {
@@ -92,17 +96,20 @@ const fontColor = {
   margin: "70px 30px",
 };
 
-const circle = {
+const frame = {
   background: "lightblue",
-  borderRadius: "50%",
-  width: "100px",
-  height: "100px",
+  borderRadius: "25px",
+  width: "auto",
+  height: "200px",
+  paddingTop: "20px",
   backgroundColor: "#4396de",
   textAlign: "center",
-  display: "flex",
+  //display: "flex",
+  display: "block",
   justifyContent: "center",
   alignItems: "center",
   color: "white",
+  margin: "10px 0",
 };
 
 const Home = () => {
@@ -114,12 +121,11 @@ const Home = () => {
           <h1 style={styleIntro}>Edith Photography</h1>
           <h3 style={styleIntro2}>Kreatywna fotografia z pomysłem i pasją</h3>
         </div>
-        <div>
+        <div style={{ padding: "20px" }}>
           <h4
             style={{
               heigt: "50vh",
               margin: "100px 100px 100px 100px",
-              fontWeight: "bold",
             }}
             className="lead"
           >
@@ -142,33 +148,68 @@ const Home = () => {
           </p>
         </div>
         <div className="container d-flex flex-wrap justify-content-around">
-          <span style={circle}>uroczystości ślubne</span>
-          <span style={circle}>konferencje</span>
-          <span style={circle}>koncerty</span>
-          <span style={circle}>sesje modowe</span>
-          <span style={circle}>sesje komercyjne</span>
-          <span style={circle}>portrety</span>
+          <div className="row" style={{ margin: "100px 0" }}>
+            <div className="col-sm-6 col-md-3">
+              <div style={frame}>
+                <img src={Medal} width="50px" height="auto" alt="" />
+                <h2>13</h2>
+                <h5>Zwycięstwa w konkursach</h5>
+              </div>
+            </div>
+            <div className="col-sm-6 col-md-3">
+              <div style={frame}>
+                <img src={CourseWork} width="50px" height="auto" alt="" />
+                <h2>850</h2>
+                <h5>Ilość przeprowadzonych wartsztatów</h5>
+              </div>
+            </div>
+            <div className="col-sm-6 col-md-3">
+              <div style={frame}>
+                <img src={Experience} width="50px" height="auto" alt="" />
+                <h2>5 lat</h2>
+                <h5> Ilość doświadczenia</h5>
+              </div>
+            </div>
+
+            <div className="col-sm-6 col-md-3">
+              <div style={frame}>
+                <img src={PhotoNumber} width="50px" height="auto" alt="" />
+                <h2>480754</h2>
+                <h5> Ilość wykonanych zdjęć</h5>
+              </div>
+            </div>
+          </div>
         </div>
-        <h1 style={fontColor}>Ostatnie realizacje</h1>
-        <div className="container">
-          <div className="row d-flex flex-wrap">
-            <div className="col d-flex">
-              {categories.map((category, id) => (
-                <div className="card">
-                  <img
-                    key={id}
-                    className="card-img-top"
-                    style={{ width: "250px", height: "auto" }}
-                    src={category.image.src}
-                    alt=""
-                  />
-                  <div className="card-body">
-                    <h5 className="card-title">
-                      <span>{category.description}</span>
-                    </h5>
+        <div
+          style={{
+            backgroundColor: "rgb(236, 236, 236)",
+            paddingTop: "30px",
+          }}
+        >
+          <h1 style={styleInfo}>Ostatnie realizacje</h1>
+          <div className="container">
+            <div className="row d-flex flex-wrap">
+              <div className="col d-flex" style={{ marginBottom: "50px" }}>
+                {categories.map((category, id) => (
+                  <div
+                    className="card"
+                    style={{ overflow: "hidden", textAlign: "center" }}
+                  >
+                    <img
+                      key={id}
+                      className="card-img-top"
+                      style={{ width: "250px", height: "auto" }}
+                      src={category.image.src}
+                      alt=""
+                    />
+                    <div className="card-body">
+                      <h5 className="card-title">
+                        <span>{category.description}</span>
+                      </h5>
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
         </div>

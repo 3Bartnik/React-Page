@@ -20,7 +20,7 @@ const workshops = {
   primaryCourse2: {
     title: "Praktyczny kurs fotografii",
     info:
-      "Kurs skupia się sprawnej obsłudze aparatu i właściwym doborze parametrów decydujących o poprawnym naświetleniu",
+      "Kurs skupia się sprawnej obsłudze aparatu i właściwym doborze parametrów decydujących o poprawnym naświetleniu zdjęcia",
   },
   primaryCourse3: {
     title: "Zaawansowany kurs fotografii",
@@ -37,52 +37,76 @@ const workshops = {
 const Studio = () => {
   return (
     <section className="studio">
-      <h3 style={fontColor}> Warsztaty i szkolenia</h3>
-      <p className="lead" style={{ margin: "100px 100px 0px" }}>
-        Chcesz poznać tajniki fotografii lub pogłębić już posiadaną wiedzę?
-        Zapisz się na warsztaty, na których nauczysz się obróbki zdjęć i samego
-        fotografowania.
-        <div>
-          <h3 style={fontColor}>
-            Przyjmuję zapisy na poniższe warsztaty i kursy
-          </h3>
-          {/*           <>
+      <div>
+        <h3 style={fontColor}> Warsztaty i szkolenia</h3>
+        <p className="lead" style={{ margin: "100px 100px 0px" }}>
+          Chcesz poznać tajniki fotografii lub pogłębić już posiadaną wiedzę?
+          Zapisz się na warsztaty, na których nauczysz się obróbki zdjęć i
+          samego fotografowania.
+        </p>
+      </div>
+      <div>
+        <h3 style={fontColor}>
+          Przyjmuję zapisy na poniższe warsztaty i kursy
+        </h3>
+        {/*           <>
             {workshops.map((workshop,id) => {}
-              <h5 key={id}>{workshop.title}</h5>
-              <span> {workshop.info} </span>
+              <li key={id}>{workshop.title}
+              <span> {workshop.info} </span></li>
             ))}
           </> */}
-          <h5 style={fontColor}>Fotografia</h5>
+        <div>
+          <span style={fontColor}>Fotografia</span>
           <ul style={{ backgroundColor: "transparent", borderBottom: "0" }}>
-            <li>Kurs podstawowy</li>
-            <li>Praktyczny kurs fotografii</li>
-            <li>Zaawansowany kurs fotografii</li>
-            <li>Młody fotograf – fotografia dla dzieci i młodzieży</li>
+            <li>
+              {workshops.primaryCourse.title}{" "}
+              <div> {workshops.primaryCourse.info} </div>
+            </li>
+            <li>
+              {workshops.primaryCourse2.title}{" "}
+              <div> {workshops.primaryCourse2.info}</div>
+            </li>
+            <li>
+              {workshops.primaryCourse3.title}{" "}
+              <div> {workshops.primaryCourse3.info}</div>
+            </li>
+            <li>
+              {workshops.primaryCourse4.title}{" "}
+              <div> {workshops.primaryCourse4.info}</div>
+            </li>
           </ul>
+        </div>
+        <div>
           <h5 style={fontColor}>Specjalistyczne warsztaty</h5>
-          <ul
-            style={{ backgroundColor: "transparent", borderBottom: "0" }}
-          ></ul>
-          <li>Street Photo</li>
-          <li>Fotografia mody</li>
-          <li>Fotografia reklamowa</li>
-          <li>Obsługa lustrzanki i bezlusterkowców - jak robić to dobrze</li>
-          <li>Fotografia produktowa dla eCommerce</li>
-          <li>Fotografia portretowa</li>
+          <ul style={{ backgroundColor: "transparent", borderBottom: "0" }}>
+            <li>Street Photo</li>
+            <li>Fotografia mody</li>
+            <li>Fotografia reklamowa</li>
+            <li>Obsługa lustrzanki i bezlusterkowców - jak robić to dobrze</li>
+            <li>Fotografia produktowa dla eCommerce</li>
+            <li>Fotografia portretowa</li>
+          </ul>
+        </div>
+        <div>
           <h5 style={fontColor}> Obróbka zdjęć</h5>
-          <ul
-            style={{ backgroundColor: "transparent", borderBottom: "0" }}
-          ></ul>
-          <li>Edycja zdjęć - podstawowy kurs Photoshop</li>
-          <li>Edycja zdjęć - zaawansowany kurs Photoshop</li>
+          <ul style={{ backgroundColor: "transparent", borderBottom: "0" }}>
+            <li>Edycja zdjęć - podstawowy kurs Photoshop</li>
+            <li>Edycja zdjęć - zaawansowany kurs Photoshop</li>
+          </ul>
+        </div>
+        <div>
           <h5 style={fontColor}>Pozostałe</h5>
           <ul style={{ backgroundColor: "transparent", borderBottom: "0" }}>
             <li>Indywidualne lekcje fotografii</li>
           </ul>
         </div>
-        <p>* Ilość miejsc na kursy i warsztaty jest ściśle ograniczona. </p>
-        <span>Zapisy odbywają się według kolejności rezerwacji.</span>
-      </p>
+      </div>
+      <p>* Ilość miejsc na kursy i warsztaty jest ściśle ograniczona. </p>
+      <span>
+        Zapisy odbywają się według kolejności rezerwacji. <br></br>W przypadku
+        pytań odnośnie kursów lub warsztatów skontaktuj się ze mną. Postram się
+        wszystko wyjaśnić.{" "}
+      </span>
     </section>
   );
 };

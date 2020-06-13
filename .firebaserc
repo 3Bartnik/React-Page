@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "alk-react-edith"
+    "default": "page-in-react",
+    "page-in-react": "alk-react-edith"
   }
 }

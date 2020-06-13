@@ -50,7 +50,7 @@ const About = (props) => {
         <span style={{ fontWeight: "bold", color: "red" }}> 1030 </span> osób.
         Łącznie przeszkoliłam{" "}
         <span style={{ fontWeight: "bold", color: "red" }}> 10332 </span> osób.
-        Obecnie część z nich obecnie prowadzi właśne biznesy.
+        Obecnie część z nich prowadzi właśne biznesy.
       </p>
       <Skills />
       <Challenges style={props.styleHeader} />
