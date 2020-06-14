@@ -3,22 +3,17 @@ import Carousel from "react-bootstrap/Carousel";
 import { moda0, moda1, moda2, moda3, moda4, moda5 } from "../assets/";
 
 const headerStyle = {
-  margin: "100px 0",
+  margin: "auto",
   color: "#4782c1",
 };
 
 const Moda = () => {
   return (
     <div className="container inner">
-      <h2 className="section-title text-center" style={headerStyle}>
-        Portfolio
-      </h2>
-      <p className="lead text-center">Przykładowe realizacje</p>
-      <div className="space30"></div>
       <div className="row">
         <div className="col-sm-3 m-auto" style={{ width: "25%" }}>
           <h3 style={headerStyle}>Fotografia modowa</h3>
-          <p className="lead text-center">
+          <p className="lead" style={{ marginTop: "20px" }}>
             Łączy w sobie fotografię reklamową i fotografię produktu. Sednem
             jest tu przedstawienie odzieży, obuwia lub dodatków.
           </p>

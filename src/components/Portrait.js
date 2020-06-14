@@ -14,7 +14,7 @@ const headerStyle = {
 
 const Portrait = (props) => {
   return (
-    <section>
+    <section style={{ backgroundColor: "rgb(236, 236, 236)" }}>
       <div>
         <h1 style={headerStyle}>Fotografia portretowa</h1>
         <p className="lead" style={{ padding: "0 30px" }}>
@@ -22,7 +22,7 @@ const Portrait = (props) => {
           twarzy, emocji dobrych, jak i tych złych.
         </p>
       </div>
-      <div className="portrait-container">
+      <div className="portrait-container" style={{ paddingBottom: "40px" }}>
         <img src={portrait1} alt="Man portrait" />
         <img src={portrait2} alt="" />
         <img src={portrait3} alt="" />

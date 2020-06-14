@@ -1,11 +1,5 @@
 import React from "react";
 
-export const contactData = {
-  phone: "+48 505-123-345",
-  e_mail: "session@edithphotography.pl",
-  address: "ul. Nibylandii 5/13, 01-513 Warszawa",
-};
-
 export const EmailElement = (props) => {
   return (
     <div className="col-md-4 mb-3 mb-md-0">

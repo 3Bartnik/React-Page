@@ -1,4 +1,6 @@
 import React from "react";
+import Carousel from "react-bootstrap/Carousel";
+import { moda0, moda1, moda3 } from "./assetes";
 
 const WrappPhoto = () => {
   return (

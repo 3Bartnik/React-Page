@@ -8,11 +8,15 @@ const stylePriceList = {
 
 /* img:hover {
   box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5); */
+/*   const fontColor = {
+    color: "#4782c1",
+    margin: "70px 30px",
+  }; */
 
 const Price = () => {
   return (
     <div className="container-price" style={stylePriceList}>
-      <h1 style={{ margin: "40px 0" }}>Cennik usług</h1>
+      <h1 style={{ margin: "40px 0", color: "#4782c1" }}>Cennik usług</h1>
       <div className="container d-flex">
         <div className="row d-flex flex-wrap">
           <div className="col-sm-12 col-lg-12 d-flex ">
@@ -55,16 +59,16 @@ const Price = () => {
         <hr></hr>
       </div>
       <div>
-        <h5 style={{ textAlign: "center" }}>Kursy i warsztaty</h5>
-        <p>
-          {" "}
-          Ceny kursów i warsztatów od 250 zł do 950 zł.<br></br> Szczegółowe
+        <h5 style={{ textAlign: "center", color: "#4782c1", margin: "30px 0" }}>
+          Kursy i warsztaty
+        </h5>
+        <p className="lead">
+          Ceny kursów i warsztatów od 250 zł do 950 zł.*<br></br> Szczegółowe
           informacje dotyczące poszczególnych kursów udzielane są po
           wcześniejszym kontakcie.<br></br>
-          Cena uzależniona jest od ilości kursantów.
         </p>
       </div>
-      <p style={{ textAlign: "center", margin: "40px 0" }}>
+      <p className="lead" style={{ textAlign: "center", margin: "40px 0" }}>
         * Ceny podlegają negocjacjom
       </p>
     </div>

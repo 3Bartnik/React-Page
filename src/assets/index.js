@@ -40,3 +40,10 @@ export const PhotoNumber = require("./WorkNumbers/portrait.png");
 export const Experience = require("./WorkNumbers/experience.png");
 //author
 export const My_photo = require("./contact_photo.jpg");
+//komerc
+export const kom1 = require("./komerc/komerc0.jpg");
+export const kom2 = require("./komerc/komerc1.jpg");
+export const kom3 = require("./komerc/komerc2.jpg");
+export const kom4 = require("./komerc/komerc3.jpg");
+export const kom5 = require("./komerc/komerc4.jpg");
+export const kom6 = require("./komerc/komerc5.jpg");

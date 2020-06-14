@@ -10,7 +10,7 @@ import PhotoGallery from "./PhotoGallery";
 
 const colorFont = {
   color: "#4782c1",
-  margin: "0 30px 50px 30px",
+  margin: "70px 30px 70px 30px",
 };
 
 const Challenges = () => {

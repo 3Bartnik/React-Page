@@ -2,13 +2,11 @@ import React from "react";
 import "./index.css";
 import "./Home.css";
 import { logoPage } from "./assets/";
-
 import LastWork from "./components/LastWork";
 import NumberInWork from "./components/NumberInWork";
-
 import Image from "react-bootstrap/Image";
 import Cooperation from "./components/Cooperation";
-//import ComponentNew from "./Newone.js";
+
 //#836969
 //#007bff
 //#4782c1
@@ -17,9 +15,6 @@ const styleInfo = {
   margin: "70px 100px",
   color: "#4782c1",
 };
-/* const styleInfo2 = {
-  margin: "100px 100px 0 100px",
-}; */
 
 const styleIntro = {
   zIndex: 2,
