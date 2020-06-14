@@ -33,3 +33,10 @@ export const product3 = require("./intro/wedding3.jpg");
 export const product4 = require("./intro/portrait.jpg");
 export const product5 = require("./intro/conference.jpg");
 export const product6 = require("./intro/moda_1.jpg");
+//WorkNumbers
+export const Medal = require("./WorkNumbers/medal.png");
+export const CourseWork = require("./WorkNumbers/school.png");
+export const PhotoNumber = require("./WorkNumbers/portrait.png");
+export const Experience = require("./WorkNumbers/experience.png");
+//author
+export const My_photo = require("./contact_photo.jpg");

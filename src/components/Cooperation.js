@@ -1,5 +1,4 @@
 import React from "react";
-//import Image from "react-bootstrap/Image";
 import Carousel from "react-bootstrap/Carousel";
 import {
   NationalG,
@@ -13,10 +12,6 @@ import {
 } from "../assets/";
 import "./Cooperation.css";
 
-/* const styleConstainer = {
-
-  margin: "20px 20px",
-}; */
 const styleCooperation = {
   //width: "200px",
   //position: "relative",

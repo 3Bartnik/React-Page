@@ -104,7 +104,7 @@ const Studio = () => {
       <p>* Ilość miejsc na kursy i warsztaty jest ściśle ograniczona. </p>
       <span>
         Zapisy odbywają się według kolejności rezerwacji. <br></br>W przypadku
-        pytań odnośnie kursów lub warsztatów skontaktuj się ze mną. Postram się
+        pytań odnośnie kursów lub warsztatów skontaktuj się ze mną. Postaram się
         wszystko wyjaśnić.{" "}
       </span>
     </section>

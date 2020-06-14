@@ -2,18 +2,9 @@ import React from "react";
 import "./index.css";
 import "./Home.css";
 import { logoPage } from "./assets/";
-import {
-  product1,
-  product2,
-  product3,
-  product4,
-  product5,
-  product6,
-} from "./assets";
-import Medal from "./assets/WorkNumbers/medal.png";
-import CourseWork from "./assets/WorkNumbers/school.png";
-import PhotoNumber from "./assets/WorkNumbers/portrait.png";
-import Experience from "./assets/WorkNumbers/experience.png";
+
+import LastWork from "./components/LastWork";
+import NumberInWork from "./components/NumberInWork";
 
 import Image from "react-bootstrap/Image";
 import Cooperation from "./components/Cooperation";
@@ -21,51 +12,6 @@ import Cooperation from "./components/Cooperation";
 //#836969
 //#007bff
 //#4782c1
-
-const categories = [
-  {
-    id: "01",
-    image: {
-      src: product1,
-    },
-    description: "Produkty",
-  },
-  {
-    id: "02",
-    image: {
-      src: product2,
-    },
-    description: "Koncerty",
-  },
-  {
-    id: "03",
-    image: {
-      src: product3,
-    },
-    description: "Uroczystości",
-  },
-  {
-    id: "04",
-    image: {
-      src: product4,
-    },
-    description: "Portrety",
-  },
-  {
-    id: "05",
-    image: {
-      src: product5,
-    },
-    description: "Konferencje",
-  },
-  {
-    id: "06",
-    image: {
-      src: product6,
-    },
-    description: "Sesje modowe",
-  },
-];
 
 const styleInfo = {
   margin: "70px 100px",
@@ -91,26 +37,10 @@ const styleIntro2 = {
   color: "white",
   textShadow: "1px 3px 3px black",
 };
-const fontColor = {
+/* const fontColor = {
   color: "#4782c1",
   margin: "70px 30px",
-};
-
-const frame = {
-  background: "lightblue",
-  borderRadius: "25px",
-  width: "auto",
-  height: "200px",
-  paddingTop: "20px",
-  backgroundColor: "#4396de",
-  textAlign: "center",
-  //display: "flex",
-  display: "block",
-  justifyContent: "center",
-  alignItems: "center",
-  color: "white",
-  margin: "10px 0",
-};
+}; */
 
 const Home = () => {
   return (
@@ -147,72 +77,8 @@ const Home = () => {
             zakątka i profesjonalnie zrealizuję każde zlecenie.
           </p>
         </div>
-        <div className="container d-flex flex-wrap justify-content-around">
-          <div className="row" style={{ margin: "100px 0" }}>
-            <div className="col-sm-6 col-md-3">
-              <div style={frame}>
-                <img src={Medal} width="50px" height="auto" alt="" />
-                <h2>13</h2>
-                <h5>Zwycięstwa w konkursach</h5>
-              </div>
-            </div>
-            <div className="col-sm-6 col-md-3">
-              <div style={frame}>
-                <img src={CourseWork} width="50px" height="auto" alt="" />
-                <h2>850</h2>
-                <h5>Ilość przeprowadzonych wartsztatów</h5>
-              </div>
-            </div>
-            <div className="col-sm-6 col-md-3">
-              <div style={frame}>
-                <img src={Experience} width="50px" height="auto" alt="" />
-                <h2>5 lat</h2>
-                <h5> Ilość doświadczenia</h5>
-              </div>
-            </div>
-
-            <div className="col-sm-6 col-md-3">
-              <div style={frame}>
-                <img src={PhotoNumber} width="50px" height="auto" alt="" />
-                <h2>480754</h2>
-                <h5> Ilość wykonanych zdjęć</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          style={{
-            backgroundColor: "rgb(236, 236, 236)",
-            paddingTop: "30px",
-          }}
-        >
-          <h1 style={styleInfo}>Ostatnie realizacje</h1>
-          <div className="container">
-            <div className="row d-flex flex-wrap">
-              <div className="col d-flex" style={{ marginBottom: "50px" }}>
-                {categories.map((category, id) => (
-                  <div
-                    className="card"
-                    style={{ overflow: "hidden", textAlign: "center" }}
-                  >
-                    <img
-                      key={id}
-                      className="card-img-top"
-                      style={{ width: "250px", height: "auto" }}
-                      src={category.image.src}
-                      alt=""
-                    />
-                    <div className="card-body">
-                      <h5 className="card-title">
-                        <span>{category.description}</span>
-                      </h5>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
+        <NumberInWork />
+        <LastWork />
         <Cooperation />
       </div>
     </section>

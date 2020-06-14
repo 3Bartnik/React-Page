@@ -56,13 +56,13 @@ const Price = () => {
       </div>
       <div>
         <h5 style={{ textAlign: "center" }}>Kursy i warsztaty</h5>
-        <h5> Fotografia</h5>
-        <ul style={{ backgroundColor: "transparent", borderBottom: "0" }}>
-          <li>Kurs podstawowy</li>
-          <li>Praktyczny kurs fotografii</li>
-          <li>Zaawansowany kurs fotografii</li>
-          <li>Młody fotograf – fotografia dla dzieci i młodzieży</li>
-        </ul>
+        <p>
+          {" "}
+          Ceny kursów i warsztatów od 250 zł do 950 zł.<br></br> Szczegółowe
+          informacje dotyczące poszczególnych kursów udzielane są po
+          wcześniejszym kontakcie.<br></br>
+          Cena uzależniona jest od ilości kursantów.
+        </p>
       </div>
       <p style={{ textAlign: "center", margin: "40px 0" }}>
         * Ceny podlegają negocjacjom
