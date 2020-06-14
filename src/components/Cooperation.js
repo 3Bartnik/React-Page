@@ -43,98 +43,215 @@ const Cooperation = (props) => {
           <Carousel>
             <Carousel.Item className="h-100 w-100">
               <div className="row">
-                <div className="col-md-4">
+                <div
+                  className="col-md-4"
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    width: "200px",
+                    height: "100px",
+                    justifyContent: "center",
+                  }}
+                >
                   <img
                     className="d-block img-responsive"
                     src={NationalG}
                     alt=""
-                    height="200vh"
+                    //height="200vh"
                     max-width="100%"
-                    margin="30px 30px"
+                    //margin="30px 30px"
                     style={styleCooperation}
+                    display="block"
+                    width="200vw"
+                    height="50px"
+                    margin="auto"
                   />
                 </div>
-                <div className="col-md-4">
+                <div
+                  className="col-md-4"
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    width: "200px",
+                    height: "100px",
+                    justifyContent: "center",
+                  }}
+                >
                   <img
                     className="d-block img-responsive"
                     src={cosmo}
                     alt=""
-                    height="100vh"
+                    //height="100vh"
                     max-width="100%"
+                    display="block"
+                    width="200vw"
+                    height="50px"
+                    margin="auto"
                   />
                 </div>
-                <div className="col-md-4">
+                <div
+                  className="col-md-4"
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    width: "200px",
+                    height: "100px",
+                    justifyContent: "center",
+                  }}
+                >
                   <img
                     className="d-block img-responsive"
                     src={ikea}
                     alt=""
-                    height="150vh"
+                    //height="150vh"
                     max-width="100%"
                     style={styleCooperation}
+                    display="block"
+                    width="200vw"
+                    height="50px"
+                    margin="auto"
                   />
                 </div>
               </div>
             </Carousel.Item>
             <Carousel.Item className="h-100 w-100">
               <div className="row">
-                <div className="col-md-4">
+                <div
+                  className="col-md-4"
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    width: "200px",
+                    height: "100px",
+                    justifyContent: "center",
+                  }}
+                >
                   <img
                     className="d-block img-responsive"
                     src={agora}
                     alt=""
-                    height="100vh"
+                    //height="100vh"
                     max-width="100%"
                     style={styleCooperation}
+                    display="block"
+                    width="200vw"
+                    height="50px"
+                    margin="auto"
                   />
                 </div>
-                <div className="col-md-4">
+                <div
+                  className="col-md-4"
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    width: "200px",
+                    height: "100px",
+                    justifyContent: "center",
+                  }}
+                >
                   <img
                     className="d-block img-responsive"
                     src={newsweek}
                     alt=""
-                    height="80vh"
+                    //height="80vh"
                     max-width="100%"
+                    display="block"
+                    width="200vw"
+                    height="50px"
+                    margin="auto"
                   />
                 </div>
-                <div className="col-md-4">
+                <div
+                  className="col-md-4"
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    width: "200px",
+                    height: "100px",
+                    justifyContent: "center",
+                  }}
+                >
                   <img
                     className="d-block img-responsive"
                     src={glamour}
                     alt=""
-                    height="60vh"
+                    //height="60vh"
                     max-width="100%"
+                    display="block"
+                    width="200vw"
+                    height="50px"
+                    margin="auto"
                   />
                 </div>
               </div>
             </Carousel.Item>
             <Carousel.Item className="h-100 w-100">
               <div className="row">
-                <div className="col-md-4 justify-content-center">
+                <div
+                  className="col-md-4 "
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    width: "200px",
+                    height: "100px",
+                    justifyContent: "center",
+                  }}
+                >
                   <img
                     className="d-block img-responsive"
                     src={vogue}
                     alt=""
-                    height="60vh"
+                    //height="60vh"
                     max-width="100%"
+                    display="block"
+                    width="200vw"
+                    height="50px"
+                    margin="auto"
                   />
                 </div>
-                <div className="col-md-4">
+                <div
+                  className="col-md-4"
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    width: "200px",
+                    height: "100px",
+                    justifyContent: "center",
+                  }}
+                >
                   <img
                     className="d-block img-responsive"
                     src={mondo}
                     alt=""
-                    height="100vh"
+                    //height="100vh"
                     max-width="100%"
                     style={styleCooperation}
+                    display="block"
+                    width="200vw"
+                    height="50px"
+                    margin="auto"
                   />
                 </div>
-                <div className="col-md-4">
+                <div
+                  className="col-md-4"
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    width: "200px",
+                    height: "100px",
+                    justifyContent: "center",
+                  }}
+                >
                   <img
                     className="d-block img-responsive"
                     src={glamour}
                     alt=""
-                    height="60vh"
+                    //height="60vh"
                     max-width="100%"
+                    display="block"
+                    width="200vw"
+                    height="50px"
+                    margin="auto"
                   />
                 </div>
               </div>
