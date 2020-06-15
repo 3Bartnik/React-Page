@@ -4,6 +4,7 @@ export const MonoVisions = require("./challenges/black&white.jpg");
 export const SonyWorld = require("./challenges/lake.jpg");
 export const GrandPress = require("./challenges/photo_C1.jpg");
 export const FineArt = require("./challenges/underwater.jpg");
+export const Build = require("./challenges/build.jpg");
 //cooperation
 export const NationalG = require("./cooperation/national-geographic-logo.png");
 export const cosmo = require("./cooperation/cosmo.png");
@@ -31,7 +32,7 @@ export const product1 = require("./intro/produkt1.jpg");
 export const product2 = require("./intro/produkt2.jpg");
 export const product3 = require("./intro/wedding3.jpg");
 export const product4 = require("./intro/portrait.jpg");
-export const product5 = require("./intro/conference.jpg");
+export const product5 = require("./intro/conference2.jpg");
 export const product6 = require("./intro/moda_1.jpg");
 //WorkNumbers
 export const Medal = require("./WorkNumbers/medal.png");

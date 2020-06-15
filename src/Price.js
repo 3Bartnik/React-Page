@@ -1,5 +1,6 @@
 import React from "react";
 import "./Price.css";
+//import { v4 as uuidv4 } from "uuid";
 
 const stylePriceList = {
   border: "3px solid rgb(107, 170, 225)",
@@ -19,102 +20,74 @@ const stylePackage = {
   fontWeight: "300",
 };
 
+const prices = [
+  {
+    /* id: uuidv4(), */
+    id: "1",
+    title: "Pakiet brązowy",
+    pln: "400 zł",
+    time: "3 godzinna sesja",
+    addition1: "Procesjonalny Make-up",
+    location: "2 lokalizacje ",
+    addition2: "Retusz zdjęć",
+  },
+  {
+    id: "2",
+    title: "Pakiet srebny",
+    pln: "750 zł",
+    time: "6 godzinna sesja",
+    addition1: "Procesjonalny Make-up",
+    location: "3 lokalizacje ",
+    addition2: "Retusz zdjęć",
+  },
+  {
+    id: "3",
+    title: "Pakiet złoty",
+    pln: "1100 zł",
+    time: "9 godzinna sesja",
+    addition1: "Procesjonalny Make-up",
+    location: "5 lokalizacje ",
+    addition2: "Retusz zdjęć",
+  },
+];
+
 const Price = () => {
   return (
     <div className="container-price" style={stylePriceList}>
       <h1 style={{ margin: "40px 0", color: "#4782c1" }}>Cennik usług</h1>
-      <div className="container d-flex flex-wrap">
-        <div className="row d-flex ">
-          <div className="col-sm-12 col-lg-12 d-flex ">
-            {/* <h5 style={{ color: "#4782c1" }}>Pakiet brązowy </h5> */}
-          </div>
-          <div className="col-sm-12 col-lg-12 ">
-            <h5 style={{ color: "#4782c1" }}>Pakiet brązowy </h5>
-            <span className="d-block" style={stylePackage}>
-              3 godzinna sesja{" "}
-            </span>
-            <span className="d-block" style={stylePackage}>
-              Make-up w cenie usługi
-            </span>
-            <span className="d-block" style={stylePackage}>
-              {" "}
-              2 lokalizacje do wyboru
-            </span>
-            <span className="d-block" style={stylePackage}>
-              {" "}
-              Retusz zdjęć
-            </span>
-            <span className="d-block" style={stylePackage}>
-              400 zł
-            </span>
-          </div>
+      <div className="container d-flex flex-wrap justify-content-center">
+        <div className="row d-flex text-center ">
+          {prices.map((price) => (
+            <div className="col-sm-12 col-lg-4 ">
+              <h5
+                style={{
+                  color: "#4782c1",
+                  textAlign: "center",
+                  paddingTop: "1rem",
+                }}
+              >
+                {price.title}{" "}
+              </h5>
+
+              <span key={price.id} className="d-block" style={stylePackage}>
+                {price.addition1}
+              </span>
+              <span className="d-block" style={stylePackage}>
+                {price.addition2}
+              </span>
+              <span className="d-block" style={stylePackage}>
+                {price.pln}
+              </span>
+              <span className="d-block" style={stylePackage}>
+                {price.time}
+              </span>
+              <span className="d-block" style={stylePackage}>
+                {price.location}
+              </span>
+            </div>
+          ))}
+          <hr></hr>
         </div>
-        <hr></hr>
-        <div className="row d-flex flex-wrap ">
-          <div className="col-sm-12 col-lg-12 d-flex ">
-            <h5 style={{ color: "#4782c1" }}>Pakiet srebrny</h5>
-          </div>
-          <div className="col-sm-12 col-lg-12 ">
-            <span className="d-block" style={stylePackage}>
-              6 godzinna sesja{" "}
-            </span>
-            <span className="d-block" style={stylePackage}>
-              Make-up w cenie usługi
-            </span>
-            <span className="d-block" style={stylePackage}>
-              {" "}
-              3 lokalizacje do wyboru
-            </span>
-            <span className="d-block" style={stylePackage}>
-              {" "}
-              Retusz zdjęć
-            </span>
-            <span className="d-block" style={stylePackage}>
-              750 zł
-            </span>
-          </div>
-        </div>
-        <hr></hr>
-        <div className="row d-flex flex-wrap ">
-          <div className="col-sm-12 col-lg-12 d-flex ">
-            <h5 style={{ color: "#4782c1" }}>Pakiet złoty</h5>
-          </div>
-          <div className="col-sm-12 col-lg-12">
-            <span
-              className="d-block"
-              style={{ fontSize: "1.25rem", fontWeight: "300" }}
-            >
-              9 godzinna sesja{" "}
-            </span>
-            <span
-              className="d-block"
-              style={{ fontSize: "1.25rem", fontWeight: "300" }}
-            >
-              Make-up w cenie usługi
-            </span>
-            <span
-              className="d-block"
-              style={{ fontSize: "1.25rem", fontWeight: "300" }}
-            >
-              {" "}
-              5 lokalizacji do wyboru
-            </span>
-            <span
-              className="d-block"
-              style={{ fontSize: "1.25rem", fontWeight: "300" }}
-            >
-              {" "}
-              Retusz zdjęć
-            </span>
-            <span
-              className="d-block"
-              style={{ fontSize: "1.25rem", fontWeight: "300" }}
-            >
-              1100 zł
-            </span>
-          </div>
-        </div>
-        <hr></hr>
       </div>
       <div>
         <h5 style={{ textAlign: "center", color: "#4782c1", margin: "30px 0" }}>

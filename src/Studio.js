@@ -18,7 +18,7 @@ const Studio = () => {
     <section className="studio">
       <div>
         <h3 style={fontColor}> Warsztaty i szkolenia</h3>
-        <p className="lead" style={{ margin: "100px 100px 0px" }}>
+        <p className="lead" style={{ margin: "100px 76px 0px" }}>
           Chcesz poznać tajniki fotografii lub pogłębić już posiadaną wiedzę?
           Zapisz się na warsztaty, na których nauczysz się obróbki zdjęć i
           samego fotografowania.
@@ -32,7 +32,7 @@ const Studio = () => {
         <SpecialCourses colorFont={fontColor} />
         <PhotoProcessing colorFont={fontColor} />
       </div>
-      <div style={{ margin: "0.6rem 5.6rem" }}>
+      <div style={{ margin: "0.6rem 4.9rem" }}>
         <p className="lead" style={{ color: "red" }}>
           Ilość miejsc na kursy i warsztaty jest ściśle ograniczona.{" "}
         </p>

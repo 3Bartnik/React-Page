@@ -94,4 +94,5 @@ const Moda = () => {
     </div>
   );
 };
+
 export default Moda;
