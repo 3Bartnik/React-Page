@@ -48,3 +48,10 @@ export const kom3 = require("./komerc/komerc2.jpg");
 export const kom4 = require("./komerc/komerc3.jpg");
 export const kom5 = require("./komerc/komerc4.jpg");
 export const kom6 = require("./komerc/komerc5.jpg");
+//courses
+export const proces1 = require("./course/processing.jpg");
+export const proces2 = require("./course/processing1.jpg");
+export const proces3 = require("./course/processing2.jpg");
+export const proces4 = require("./course/processing3.jpg");
+export const proces5 = require("./course/photo_1.jpg");
+export const proces6 = require("./course/course.jpg");
