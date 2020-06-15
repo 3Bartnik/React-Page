@@ -32,22 +32,25 @@ const Studio = () => {
         <SpecialCourses colorFont={fontColor} />
         <PhotoProcessing colorFont={fontColor} />
       </div>
-      <p className="lead" style={{ color: "red", margin: "40px 0 0 90px" }}>
-        Ilość miejsc na kursy i warsztaty jest ściśle ograniczona.{" "}
-      </p>
-      <p
-        clasName="lead"
-        style={{
-          margin: "40px 0 0 90px",
-          fontSize: "1.25rem",
-          fontWeight: "300",
-        }}
-      >
-        Zapisy odbywają się według kolejności zgłoszeń. Istnieje również
-        możliwość skorzystania z indywidualnych lekcji fotografii. W przypadku
-        pytań odnośnie kursów lub warsztatów proszę o kontakt. Postaram się
-        wszystko szybko wyjaśnić.
-      </p>
+      <div style={{ margin: "0.6rem 5.6rem" }}>
+        <p className="lead" style={{ color: "red" }}>
+          Ilość miejsc na kursy i warsztaty jest ściśle ograniczona.{" "}
+        </p>
+        <p
+          className="lead"
+          style={{
+            // margin: "40px 90px 10px 90px",
+
+            fontSize: "1.25rem",
+            fontWeight: "300",
+          }}
+        >
+          Zapisy odbywają się według kolejności zgłoszeń. Istnieje również
+          możliwość skorzystania z indywidualnych lekcji fotografii. W przypadku
+          pytań odnośnie kursów lub warsztatów proszę o kontakt. Postaram się
+          wszystko szybko wyjaśnić.
+        </p>
+      </div>
     </section>
   );
 };

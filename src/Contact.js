@@ -18,8 +18,8 @@ const contactData = {
 const Contact = () => {
   return (
     <section className="contact-section">
-      <div className="container">
-        <h1 style={colorFont}>Zapraszam do kontaktu </h1>
+      <div className="container text-center">
+        <h2 style={colorFont}>Zapraszam do kontaktu </h2>
         <div className="row justify-content-center">
           <PostAddress address={contactData.address} />
           <EmailElement e_mail={contactData.e_mail} />

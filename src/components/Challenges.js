@@ -1,5 +1,5 @@
 import React from "react";
-import PhotoGallery from "./PhotoGallery";
+import PhotoGallery2 from "./PhotoGallery2";
 
 /* export const competitions = {
   comp1: "MonoVisions Photography Awards",
@@ -17,7 +17,7 @@ const Challenges = () => {
   return (
     <div className="container ">
       <h1 style={colorFont}> Wyróżnienia w konkursach fotograficznych</h1>
-      <PhotoGallery />
+      <PhotoGallery2 />
     </div>
   );
 };

@@ -5,7 +5,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <footer>
-      <div className="justify-content-center">
+      <div className="justify-content-center" style={{ marginTop: "15px" }}>
         <h5>Social Media</h5>
         <span>Znajdziesz mnie na:</span>
         <div className="social d-flex justify-content-center">

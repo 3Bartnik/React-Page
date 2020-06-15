@@ -3,7 +3,7 @@ import React from "react";
 export const EmailElement = (props) => {
   return (
     <div className="col-md-4 mb-3 mb-md-0">
-      <div className="card py-4 h-100">
+      <div className="card py-4 h-100 w-100">
         <div className="card-body text-center">
           <h4 className="text m-0">E-mail:</h4>
           <hr className="my-3" />
@@ -19,7 +19,7 @@ export const EmailElement = (props) => {
 export const PostAddress = (props) => {
   return (
     <div className="col-md-4 mb-3 mb-md-0">
-      <div className="card py-4 h-100">
+      <div className="card py-4 h-100 w-100">
         <div className="card-body text-center">
           <h4 className="text m-0">Adres:</h4>
           <hr className="my-3" />
@@ -32,7 +32,7 @@ export const PostAddress = (props) => {
 export const PhoneNumber = (props) => {
   return (
     <div className="col-md-4 mb-3 mb-md-0">
-      <div className="card py-4 h-100">
+      <div className="card py-4 h-100 w-100">
         <div className="card-body text-center">
           <h4 className="text m-0">Telefon:</h4>
           <hr className="my-3" />
