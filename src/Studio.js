@@ -2,6 +2,7 @@ import React from "react";
 import "./Studio.css";
 import PhotoCourses from "./components/PhotographyCourses";
 import SpecialCourses from "./components/SpecialCourses";
+import PhotoProcessing from "./components/PhotoProcessing";
 //import Image from "react-bootstrap/Image";
 //#836969
 //#007bff
@@ -27,34 +28,26 @@ const Studio = () => {
         <h3 style={fontColor}>
           Przyjmuję zapisy na poniższe warsztaty i kursy
         </h3>
-        {/*           <>
-            {workshops.map((workshop,id) => {}
-              <li key={id}>{workshop.title}
-              <span> {workshop.info} </span></li>
-            ))}
-          </> */}
         <PhotoCourses colorFont={fontColor} />
         <SpecialCourses colorFont={fontColor} />
-        <div>
-          <h5 style={fontColor}> Obróbka zdjęć</h5>
-          <ul style={{ backgroundColor: "transparent", borderBottom: "0" }}>
-            <li>Edycja zdjęć - podstawowy kurs Photoshop</li>
-            <li>Edycja zdjęć - zaawansowany kurs Photoshop</li>
-          </ul>
-        </div>
-        <div>
-          <h5 style={fontColor}>Pozostałe</h5>
-          <ul style={{ backgroundColor: "transparent", borderBottom: "0" }}>
-            <li>Indywidualne lekcje fotografii</li>
-          </ul>
-        </div>
+        <PhotoProcessing colorFont={fontColor} />
       </div>
-      <p>* Ilość miejsc na kursy i warsztaty jest ściśle ograniczona. </p>
-      <span>
-        Zapisy odbywają się według kolejności rezerwacji. <br></br>W przypadku
-        pytań odnośnie kursów lub warsztatów skontaktuj się ze mną. Postaram się
-        wszystko wyjaśnić.{" "}
-      </span>
+      <p className="lead" style={{ color: "red", margin: "40px 0 0 90px" }}>
+        Ilość miejsc na kursy i warsztaty jest ściśle ograniczona.{" "}
+      </p>
+      <p
+        clasName="lead"
+        style={{
+          margin: "40px 0 0 90px",
+          fontSize: "1.25rem",
+          fontWeight: "300",
+        }}
+      >
+        Zapisy odbywają się według kolejności zgłoszeń. Istnieje również
+        możliwość skorzystania z indywidualnych lekcji fotografii. W przypadku
+        pytań odnośnie kursów lub warsztatów proszę o kontakt. Postaram się
+        wszystko szybko wyjaśnić.
+      </p>
     </section>
   );
 };

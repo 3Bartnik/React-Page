@@ -15,6 +15,7 @@ const frame = {
   alignItems: "center",
   color: "white",
   margin: "10px 0",
+  boxShadow: "2px 3px 6px 0px #888888",
 };
 const NumberInWork = () => {
   return (

@@ -21,9 +21,9 @@ const App = () => {
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
-            <Route path="/studio" component={Studio} />
+            <Route path="/courses" component={Studio} />
             <Route path="/price" component={Price} />
-            <Route path="/artistic" component={Artistic} />
+            <Route path="/photography" component={Artistic} />
             <Route component={Error} />
           </Switch>
         </section>

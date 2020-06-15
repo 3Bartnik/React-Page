@@ -20,13 +20,17 @@ const Nav = () => {
           </NavLink>
         </li>
         <li className="nav-items">
-          <NavLink activeClassName="active" to="/artistic" className="nav_link">
+          <NavLink
+            activeClassName="active"
+            to="/photography"
+            className="nav_link"
+          >
             Fotografia
           </NavLink>
         </li>
         <li className="nav-items">
-          <NavLink activeClassName="active" to="/studio" className="nav_link">
-            Studio
+          <NavLink activeClassName="active" to="/courses" className="nav_link">
+            Warsztaty
           </NavLink>
         </li>
         <li className="nav-items">

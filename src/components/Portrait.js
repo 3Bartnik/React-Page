@@ -8,8 +8,10 @@ import {
 } from "../assets/";
 
 const headerStyle = {
-  margin: "100px 0",
+  marginTop: "50px",
+  paddingBottom: "50px",
   color: "#4782c1",
+  padding: "40px 0 0 0",
 };
 
 const Portrait = (props) => {
@@ -17,7 +19,7 @@ const Portrait = (props) => {
     <section style={{ backgroundColor: "rgb(236, 236, 236)" }}>
       <div>
         <h1 style={headerStyle}>Fotografia portretowa</h1>
-        <p className="lead" style={{ padding: "0 30px" }}>
+        <p className="lead" style={{ padding: "0 50px", textAlign: "center" }}>
           Ten rodzaj fotografii skupia się na uchwyceniu w kadrze ludzi, mimiki
           twarzy, emocji dobrych, jak i tych złych.
         </p>

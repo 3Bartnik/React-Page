@@ -77,7 +77,11 @@ const LastWork = () => {
               {categories.map((category, id) => (
                 <div
                   className="card"
-                  style={{ overflow: "hidden", textAlign: "center" }}
+                  style={{
+                    overflow: "hidden",
+                    textAlign: "center",
+                    boxShadow: "1px 5px 10px 0px #888888",
+                  }}
                 >
                   <img
                     key={id}
