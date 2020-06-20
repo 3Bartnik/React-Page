@@ -15,7 +15,7 @@ const headerStyle = {
   textAlign: "center",
 };
 
-const Portrait = (props) => {
+const Portrait = () => {
   return (
     <section style={{ backgroundColor: "rgb(236, 236, 236)" }}>
       <div>
