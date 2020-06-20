@@ -65,6 +65,7 @@ class Form extends Component {
             placeholder="Wpisz imię i nazwisko"
             value={this.state.fullName}
             onChange={this.handleFullNameChange}
+            pattern="[a-zA-Z]*"
           ></InputStyle>
           <div style={{ color: "red", fontSize: "12" }}>
             {this.state.fullNameError}
