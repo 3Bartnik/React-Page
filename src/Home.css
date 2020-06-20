@@ -2,14 +2,6 @@
   position: relative;
   overflow: hidden;
 }
-/* .container img {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: auto;
-  opacity: 0.6;
-} */
 .Home img {
   width: 100vw;
   height: 100vh;
@@ -22,13 +14,95 @@
   overflow: hidden;
   height: 100vh;
 }
-/* .container-fluid img {
-  width: 80rem;
-} */
-
 .portrait-container img {
   width: 15rem;
 }
 .fluid {
   width: 100%;
+}
+.showinfo,
+.header {
+  position: absolute;
+  top: 25rem;
+  left: 0;
+  color: white;
+  text-shadow: 1px 3px 3px black;
+  animation-name: example;
+  animation-duration: 3s;
+  margin: 0 2rem;
+  font-size: 0.9rem;
+}
+.header {
+  top: 22rem;
+  margin: 0 2rem;
+  font-size: 1.3rem;
+}
+@keyframes example {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 768px) {
+  h1 {
+    left: 0;
+    font-size: 1.7rem;
+    margin: 0;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    left: 0;
+    font-size: 1rem;
+  }
+  div {
+    padding: 0 1%;
+  }
+  .img-top {
+    height: 40vh;
+    left: 0;
+  }
+  h4 {
+    font-size: 1rem;
+    margin: 0;
+  }
+  .afterInfo {
+    margin: 100px 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .showinfo {
+    font-size: 1.75rem;
+    left: 10rem;
+    margin: 0 0;
+    top: 25rem;
+  }
+  .header {
+    top: 18rem;
+    left: 10rem;
+    margin: 0 0;
+    font-size: 2.9rem;
+  }
+  .information {
+    margin: 6.25rem;
+  }
+
+  .afterInfo {
+    margin: 100px;
+  }
+
+  .img-top h1 {
+    left: 10rem;
+  }
+  .img-top {
+    height: 100vh;
+  }
+  h1 {
+    margin: "4.38rem 6.25rem";
+    font-weight: 2.5rem;
+  }
 }

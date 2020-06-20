@@ -3,10 +3,7 @@ import "./Studio.css";
 import PhotoCourses from "./components/PhotographyCourses";
 import SpecialCourses from "./components/SpecialCourses";
 import PhotoProcessing from "./components/PhotoProcessing";
-//import Image from "react-bootstrap/Image";
-//#836969
-//#007bff
-//#4782c1
+
 const fontColor = {
   color: "#4782c1",
   textAlign: "center",
@@ -39,8 +36,6 @@ const Studio = () => {
         <p
           className="lead"
           style={{
-            // margin: "40px 90px 10px 90px",
-
             fontSize: "1.25rem",
             fontWeight: "300",
           }}

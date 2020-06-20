@@ -7,35 +7,10 @@ import NumberInWork from "./components/NumberInWork";
 import Image from "react-bootstrap/Image";
 import Cooperation from "./components/Cooperation";
 
-//#836969
-//#007bff
-//#4782c1
-
 const styleInfo = {
-  margin: "70px 100px",
+  margin: "2rem 1rem",
   color: "#4782c1",
 };
-
-const styleIntro = {
-  zIndex: 2,
-  position: "absolute",
-  top: "20rem",
-  left: "10rem",
-  color: "white",
-  textShadow: "1px 3px 3px black",
-};
-const styleIntro2 = {
-  zIndex: 2,
-  position: "absolute",
-  top: "25rem",
-  left: "10rem",
-  color: "white",
-  textShadow: "1px 3px 3px black",
-};
-/* const fontColor = {
-  color: "#4782c1",
-  margin: "70px 30px",
-}; */
 
 const Home = () => {
   return (
@@ -43,16 +18,15 @@ const Home = () => {
       <div className="container-fluid pr-0 pl-0">
         <div className="img-top">
           <Image className="fluid" src={logoPage} alt="logo" />
-          <h1 style={styleIntro}>Edith Photography</h1>
-          <h3 style={styleIntro2}>Kreatywna fotografia z pomysłem i pasją</h3>
+          <h1 className="header">Edith Photography</h1>
+          <h3 className="showinfo">Kreatywna fotografia z pomysłem i pasją</h3>
         </div>
         <div style={{ padding: "20px" }}>
           <h4
             style={{
               heigt: "50vh",
-              margin: "100px 100px 100px 100px",
             }}
-            className="lead"
+            className="lead afterInfo"
           >
             Potrzebujesz profesjonalnej sesji zdjęciowej, która wypromuje Twoją
             firmę lub oferowane przez nią produkty? Zastanawiasz się, jakie
@@ -62,7 +36,7 @@ const Home = () => {
         </div>
         <div style={{ backgroundColor: "#ececec", padding: "20px" }}>
           <h1 style={styleInfo}>Zakres usług</h1>
-          <p className="lead" style={{ margin: "100px 100px" }}>
+          <p className="lead information">
             Oferuję szeroki zakres współpracy w zakresie obsługi fotograficznej
             konferencji, eventów, aż po sesje ślubne, przyjęcia weselne i
             okolicznościowe, zdjęcia plenerowe oraz zdjęcia produktowe.

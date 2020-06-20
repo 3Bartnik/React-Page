@@ -1,19 +1,11 @@
 import React from "react";
 import "./Price.css";
-//import { v4 as uuidv4 } from "uuid";
 
 const stylePriceList = {
   border: "3px solid rgb(107, 170, 225)",
   margin: "30px 30px",
   borderRadius: "25px",
 };
-
-/* img:hover {
-  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5); */
-/*   const fontColor = {
-    color: "#4782c1",
-    margin: "70px 30px",
-  }; */
 
 const stylePackage = {
   fontSize: "1.25rem",
@@ -22,7 +14,6 @@ const stylePackage = {
 
 const prices = [
   {
-    /* id: uuidv4(), */
     id: "1",
     title: "Pakiet brązowy",
     pln: "400 zł",

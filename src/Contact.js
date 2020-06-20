@@ -1,10 +1,12 @@
 import React from "react";
 import "./Contact.css";
+import Form from "./Form.js";
 import {
   EmailElement,
   PhoneNumber,
   PostAddress,
 } from "./components/ContactData";
+
 const colorFont = {
   color: "#4782c1",
   marginBottom: "70px",
@@ -19,11 +21,12 @@ const Contact = () => {
   return (
     <section className="contact-section">
       <div className="container text-center">
-        <h2 style={colorFont}>Zapraszam do kontaktu </h2>
+        <h3 style={colorFont}>Zapraszam do kontaktu </h3>
         <div className="row justify-content-center">
           <PostAddress address={contactData.address} />
           <EmailElement e_mail={contactData.e_mail} />
           <PhoneNumber phone={contactData.phone} />
+          <Form />
         </div>
       </div>
     </section>

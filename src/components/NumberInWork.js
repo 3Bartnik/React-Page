@@ -9,7 +9,6 @@ const frame = {
   paddingTop: "20px",
   backgroundColor: "#4396de",
   textAlign: "center",
-  //display: "flex",
   display: "block",
   justifyContent: "center",
   alignItems: "center",
